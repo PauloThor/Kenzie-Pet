@@ -43,52 +43,55 @@ Esta rota retorna todos os animais cadastrados no banco.
 RESPONSE STATUS -> HTTP 200 (ok)
 Response:
 
+```json
 [
-{
-"id": 1,
-"name": "Bidu",
-"age": 1.0,
-"weight": 30.0,
-"sex": "macho",
-"group": {
-"id": 1,
-"name": "cao",
-"scientific_name": "canis familiaris"
-},
-"characteristic_set": [
-{
-"id": 1,
-"characteristic": "peludo"
-},
-{
-"id": 2,
-"characteristic": "medio porte"
-}
+  {
+    "id": 1,
+    "name": "Bidu",
+    "age": 1.0,
+    "weight": 30.0,
+    "sex": "macho",
+    "group": {
+      "id": 1,
+      "name": "cao",
+      "scientific_name": "canis familiaris"
+    },
+    "characteristic_set": [
+      {
+        "id": 1,
+        "characteristic": "peludo"
+      },
+      {
+        "id": 2,
+        "characteristic": "medio porte"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Hanna",
+    "age": 1.0,
+    "weight": 20.0,
+    "sex": "femea",
+    "group": {
+      "id": 2,
+      "name": "gato",
+      "scientific_name": "felis catus"
+    },
+    "characteristic_set": [
+      {
+        "id": 1,
+        "characteristic": "peludo"
+      },
+      {
+        "id": 3,
+        "characteristic": "felino"
+      }
+    ]
+  }
 ]
-},
-{
-"id": 2,
-"name": "Hanna",
-"age": 1.0,
-"weight": 20.0,
-"sex": "femea",
-"group": {
-"id": 2,
-"name": "gato",
-"scientific_name": "felis catus"
-},
-"characteristic_set": [
-{
-"id": 1,
-"characteristic": "peludo"
-},
-{
-"id": 3,
-"characteristic": "felino"
-}
-]
-}
-]
+```
+
 GET /api/animals/<int:animal_id>/
 Esta rota retorna as informações do animal com id igual ao passado na rota.
 
