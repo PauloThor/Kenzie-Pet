@@ -38,7 +38,7 @@ Para utilizar este sistema, é necessário utilizar um API Client, como o Insomn
 
 Rotas
 
-<h2>GET /api/animals/</h2>
+<h3>GET /api/animals/</h3>
 Esta rota retorna todos os animais cadastrados no banco.
 
 RESPONSE STATUS -> HTTP 200 (ok)
@@ -93,7 +93,7 @@ Response:
 ]
 ```
 
-<h2>GET /api/animals/<int:animal_id>/</h2>
+<h3>GET /api/animals/int:animal_id/</h3>
 Esta rota retorna as informações do animal com id igual ao passado na rota.
 
 RESPONSE STATUS -> HTTP 200 (ok)
@@ -123,7 +123,7 @@ RESPONSE STATUS -> HTTP 200 (ok)
 }
 ```
 
-<h2>POST /api/animals/</h2>
+<h3>POST /api/animals/</h3>
 Esta rota é para a criação de informações de animais.
 
 RESPONSE STATUS -> HTTP 201 (created)
@@ -177,7 +177,7 @@ Response:
 }
 ```
 
-<h2>DELETE /api/animals/<int:animal_id>/</h2>
+<h3>DELETE /api/animals/int:animal_id/</h3>
 Rota para deletar as informações de um animal.
 
 Não há conteúdo no retorno da requisição.
