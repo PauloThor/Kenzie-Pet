@@ -96,76 +96,86 @@ GET /api/animals/<int:animal_id>/
 Esta rota retorna as informações do animal com id igual ao passado na rota.
 
 RESPONSE STATUS -> HTTP 200 (ok)
+
+```json
 {
-"id": 1,
-"name": "Bidu",
-"age": 1.0,
-"weight": 30.0,
-"sex": "macho",
-"group": {
-"id": 1,
-"name": "cao",
-"scientific_name": "canis familiaris"
-},
-"characteristic_set": [
-{
-"id": 1,
-"characteristic": "peludo"
-},
-{
-"id": 2,
-"characteristic": "medio porte"
+  "id": 1,
+  "name": "Bidu",
+  "age": 1.0,
+  "weight": 30.0,
+  "sex": "macho",
+  "group": {
+    "id": 1,
+    "name": "cao",
+    "scientific_name": "canis familiaris"
+  },
+  "characteristic_set": [
+    {
+      "id": 1,
+      "characteristic": "peludo"
+    },
+    {
+      "id": 2,
+      "characteristic": "medio porte"
+    }
+  ]
 }
-]
-}
+```
+
 POST /api/animals/
 Esta rota é para a criação de informações de animais.
 
 RESPONSE STATUS -> HTTP 201 (created)
 Body:
 
+```json
 {
-"name": "Bidu",
-"age": 1,
-"weight": 30,
-"sex": "macho",
-"group": {
-"name": "cao",
-"scientific_name": "canis familiaris"
-},
-"characteristic_set": [
-{
-"characteristic": "peludo"
-},
-{
-"characteristic": "medio porte"
+  "name": "Bidu",
+  "age": 1,
+  "weight": 30,
+  "sex": "macho",
+  "group": {
+    "name": "cao",
+    "scientific_name": "canis familiaris"
+  },
+  "characteristic_set": [
+    {
+      "characteristic": "peludo"
+    },
+    {
+      "characteristic": "medio porte"
+    }
+  ]
 }
-]
-}
+```
+
 Response:
 
+```json
 {
-"id": 1,
-"name": "Bidu",
-"age": 1.0,
-"weight": 30.0,
-"sex": "macho",
-"group": {
-"id": 1,
-"name": "cao",
-"scientific_name": "canis familiaris"
-},
-"characteristic_set": [
-{
-"id": 1,
-"characteristic": "peludo"
-},
-{
-"id": 2,
-"characteristic": "medio porte"
+  "id": 1,
+  "name": "Bidu",
+  "age": 1.0,
+  "weight": 30.0,
+  "sex": "macho",
+  "group": {
+    "id": 1,
+    "name": "cao",
+    "scientific_name": "canis familiaris"
+  },
+  "characteristic_set": [
+    {
+      "id": 1,
+      "characteristic": "peludo"
+    },
+    {
+      "id": 2,
+      "characteristic": "medio porte"
+    }
+  ]
 }
-]
-}
+```
+
 DELETE /api/animals/<int:animal_id>/
 Rota para deletar as informações de um animal.
 
