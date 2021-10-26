@@ -93,7 +93,7 @@ Response:
 ]
 ```
 
-<h3>GET /api/animals/int:animal_id/</h3>
+<h3>GET /api/animals/< int:animal_id >/</h3>
 Esta rota retorna as informações do animal com id igual ao passado na rota.
 
 RESPONSE STATUS -> HTTP 200 (ok)
@@ -177,7 +177,7 @@ Response:
 }
 ```
 
-<h3>DELETE /api/animals/int:animal_id/</h3>
+<h3>DELETE /api/animals/< int:animal_id >/</h3>
 Rota para deletar as informações de um animal.
 
 Não há conteúdo no retorno da requisição.
