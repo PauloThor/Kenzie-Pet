@@ -184,7 +184,7 @@ Não há conteúdo no retorno da requisição.
 
 RESPONSE STATUS -> HTTP 204 (no content)
 
-<h2>Tecnologias utilizadas 📱</h2>
+<h1>Tecnologias utilizadas 📱</h1>
 <ul>
 <li>Django</li>
 <li>Django Rest Framework</li>
@@ -193,5 +193,5 @@ RESPONSE STATUS -> HTTP 204 (no content)
 
 <hr/>
 
-<h2>Licence</h2>
+<h1>Licence</h1>
 MIT
