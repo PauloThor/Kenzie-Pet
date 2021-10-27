@@ -183,9 +183,15 @@ Rota para deletar as informações de um animal.
 Não há conteúdo no retorno da requisição.
 
 RESPONSE STATUS -> HTTP 204 (no content)
-Tecnologias utilizadas 📱
-Django
-Django Rest Framework
-SQLite
-Licence
+
+<h2>Tecnologias utilizadas 📱</h2>
+<ul>
+<li>Django</li>
+<li>Django Rest Framework</li>
+<li>SQLite</li>
+</ul>
+
+<hr/>
+
+<h2>Licence</h2>
 MIT
